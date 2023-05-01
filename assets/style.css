@@ -398,7 +398,9 @@ body {
 /*-----------------------------------*\
   #ARTIKEL
 \*-----------------------------------*/
-.article { padding-block: var(--section-padding); }
+.article { padding-block: var(--section-padding);
+  margin-block: var(--section-margin);
+}
 
 .article .section-title { margin-bottom: 80px; }
 
