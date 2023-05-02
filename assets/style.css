@@ -406,6 +406,19 @@ body {
   margin-block: var(--section-margin);
 }
 
+.penulis{
+  margin :10px 0px;
+  color: var(--independence);
+}
+
+.share-sosmed{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 120px;
+  /* padding-right: 90%; */
+}
+
 .article .section-title { margin-bottom: 80px; }
 
 .article-list {
@@ -485,6 +498,11 @@ body {
 }
 
 .article-link-btn:is(:hover, :focus) { color: var(--green-2); }
+
+.para-artikel {
+  text-align: justify;
+
+}
 
 /*-----------------------------------*\
   #PROGRAM
