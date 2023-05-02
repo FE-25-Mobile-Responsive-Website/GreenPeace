@@ -1,288 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Greenpeace</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style.css"/>
     <!--===== FONTAWESOME LINK =====-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
   </head>
   <body>
     <!--===== HEADER =====-->
     <header class="header" data-header>
       <div class="container">
         <a href="#" class="logo">
-          <img
-            src="https://i.ibb.co/DgJ1wqm/logo-gp.png"
-            alt="logo-gp"
-            border="0"
-          />
+          <img src="https://i.ibb.co/DgJ1wqm/logo-gp.png" alt="logo-gp" border="0"/>
         </a>
         <button class="menu-toggle-btn" data-nav-toggle-btn>
           <i class="fa-solid fa-bars open" style="color: #707070"></i>
           <i class="fa-solid fa-xmark close" style="color: #707070"></i>
         </button>
         <nav class="navbar">
-          <ul class="navbar-list">
-            <li>
-              <a href="index.html" class="navbar-link" data-navbar-link
-                >Home</a
-              >
-            </li>
-            <li>
-              <a href="#" class="navbar-link" data-navbar-link
-                >Article</a
-              >
-            </li>
-            <li>
-              <a href="#program" class="navbar-link" data-navbar-link
-                >Program</a
-              >
-            </li>
-            <li>
-              <a href="#about" class="navbar-link" data-navbar-link>About Us</a>
-            </li>
-            <li>
-              <a href="#contact" class="navbar-link" data-navbar-link
-                >Contact Us</a
-              >
-            </li>
-            <button class="btn btn-primary">
-              <span>Donasi Sekarang</span>
+            <ul class="navbar-list">
+              <li>
+                <a href="index.html" class="navbar-link" data-navbar-link>Home</a>
+              </li>
+              <li>
+                <a href="article.html" class="navbar-link" data-navbar-link>Artikel</a>
+              </li>
+              <li>
+                <a href="#program" class="navbar-link" data-navbar-link>Program</a>
+              </li>
+              <li>
+                <a href="#about" class="navbar-link" data-navbar-link>Tentang Kami</a>
+              </li>
+              <li>
+                <a href="#contact" class="navbar-link" data-navbar-link>Kontak Kami</a>
+              </li>
+            </ul>
+            <button class="btn navbar-btn btn-primary">
+              <span>DONASI</span>
             </button>
-          </ul>
-          <button class="btn btn-primary">
-            <span>Login</span>
-          </button>
-        </nav>
+            <button class="btn navbar-btn btn-outline">
+              <span>Login</span>
+            </button>
+        </nav>        
       </div>
     </header>
 
+    <main>
     <!-- daftar artiel -->
-    <article class="article" id="article">
-      <div class="container">
-        <h2 class="h1 section-title">Article</h2>
-        <ul class="article-list">
-          <!-- Article 1 -->
-          <li>
-            <div class="article-card">
-              <figure class="article-banner">
-                <img
-                  src="https://i.ibb.co/zm9PHXx/article2.jpg"
-                  alt="Equitable Transportation, Savior(s) of Safe Mobility in Our Society"
-                />
-              </figure>
-              <div class="article-meta">
-                <span>
-                  <ion-icon name="calendar-outline"></ion-icon>
-                  <time datetime="2023-03-28">28 March 2023</time>
-                </span>
-                <span>
-                  <ion-icon name="person-outline"></ion-icon>
-                  <p>Greenpeace</p>
-                </span>
+      <!--===== ARTICLE =====-->
+      <article class="article" id="article">
+        <div class="container">
+          <h2 class="h1 section-title">Article</h2>
+          <ul class="article-list">
+            <li>
+              <div class="article-card">
+                <figure class="article-banner">
+                  <img src="https://i.ibb.co/zm9PHXx/article2.jpg" alt="Equitable Transportation, Savior(s) of Safe Mobility in Our Society">
+                </figure>
+                <div class="article-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2023-03-28">28 March 2023</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>Greenpeace</p>
+                  </span>
+                </div>
+                <h3 class="article-title">Equitable Transportation, Savior(s) of Safe Mobility in Our Society</h3>
+                <p class="article-text">
+                  Public transportation is a basic need of the community and is realized by the government from the results of collecting taxes on its people.
+                </p>
+                <a href="article-1.html" class="article-link-btn">
+                  <span>Learn More</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
               </div>
-              <h3 class="article-title">
-                Equitable Transportation, Savior(s) of Safe Mobility in Our
-                Society
-              </h3>
-              <p class="article-text">
-                Public transportation is a basic need of the community and is
-                realized by the government from the results of collecting taxes
-                on its people.
-              </p>
-              <a href="article-1.html" class="article-link-btn">
-                <span>Learn More</span>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </a>
-            </div>
-          </li>
-
-          <!-- Article 2 -->
-          <li>
-            <div class="article-card">
-              <figure class="article-banner">
-                <img
-                  src="https://i.ibb.co/jzKbkn7/article3.jpg"
-                  alt="IPCC Reveals Climate Crisis More Real, Ambitious Climate Action Needed Now"
-                />
-              </figure>
-              <div class="article-meta">
-                <span>
-                  <ion-icon name="calendar-outline"></ion-icon>
-                  <time datetime="2023-03-22">22 March 2023</time>
-                </span>
-                <span>
-                  <ion-icon name="person-outline"></ion-icon>
-                  <p>Greenpeace</p>
-                </span>
+            </li>
+            <li>
+              <div class="article-card">
+                <figure class="article-banner">
+                  <img src="https://i.ibb.co/jzKbkn7/article3.jpg" alt="IPCC Reveals Climate Crisis More Real, Ambitious Climate Action Needed Now">
+                </figure>
+                <div class="article-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2023-03-22">22 March 2023</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>Greenpeace</p>
+                  </span>
+                </div>
+                <h3 class="article-title">IPCC Reveals Climate Crisis More Real, Ambitious Climate Action Needed Now</h3>
+                <p class="article-text">
+                  The increase in Earth's temperature could reach 2.8°C in 2100, exceeding the safe limit of global warming. Ambitious climate action is needed now.
+                </p>
+                <a href="article-1.html" class="article-link-btn" id="link">
+                  <span>Learn More</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
               </div>
-              <h3 class="article-title">
-                IPCC Reveals Climate Crisis More Real, Ambitious Climate Action
-                Needed Now
-              </h3>
-              <p class="article-text">
-                The increase in Earth's temperature could reach 2.8°C in 2100,
-                exceeding the safe limit of global warming. Ambitious climate
-                action is needed now.
-              </p>
-              <a href="article-1.html" class="article-link-btn" id="link">
-                <span>Learn More</span>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </a>
-            </div>
-          </li>
-
-          <!-- Article 3 -->
-          <li>
-            <div class="article-card">
-              <figure class="article-banner">
-                <img
-                  src="https://i.ibb.co/Qbn1hmS/article1.jpg"
-                  alt="Papua Clear Voice Festival, Understanding and Voicing Papua Through Arts and Culture"
-                />
-              </figure>
-              <div class="article-meta">
-                <span>
-                  <ion-icon name="calendar-outline"></ion-icon>
-                  <time datetime="2023-03-17">17 March 2023</time>
-                </span>
-                <span>
-                  <ion-icon name="person-outline"></ion-icon>
-                  <p>Greenpeace</p>
-                </span>
+            </li>
+            <li>
+              <div class="article-card">
+                <figure class="article-banner">
+                  <img src="https://i.ibb.co/Qbn1hmS/article1.jpg" alt="Papua Clear Voice Festival, Understanding and Voicing Papua Through Arts and Culture">
+                </figure>
+                <div class="article-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2023-03-17">17 March 2023</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>Greenpeace</p>
+                  </span>
+                </div>
+                <h3 class="article-title">Papua Clear Voice Festival, Understanding and Voicing Papua Through Arts and Culture</h3>
+                <p class="article-text">
+                  Greenpeace collaborated with Papua Itu Kita-forum Papuan solidarity focused on human rights as well as an information and study center to hold..
+                </p>
+                <a href="article-1.html" class="article-link-btn">
+                  <span>Learn More</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
               </div>
-              <h3 class="article-title">
-                Papua Clear Voice Festival, Understanding and Voicing Papua
-                Through Arts and Culture
-              </h3>
-              <p class="article-text">
-                Greenpeace collaborated with Papua Itu Kita-forum Papuan
-                solidarity focused on human rights as well as an information and
-                study center to hold..
-              </p>
-              <a href="article-1.html" class="article-link-btn">
-                <span>Learn More</span>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </a>
-            </div>
-          </li>
-
-          <!-- Article 4 -->
-          <li>
-            <div class="article-card">
-              <figure class="article-banner">
-                <img
-                  src="https://i.ibb.co/zm9PHXx/article2.jpg"
-                  alt="Equitable Transportation, Savior(s) of Safe Mobility in Our Society"
-                />
-              </figure>
-              <div class="article-meta">
-                <span>
-                  <ion-icon name="calendar-outline"></ion-icon>
-                  <time datetime="2023-03-28">28 March 2023</time>
-                </span>
-                <span>
-                  <ion-icon name="person-outline"></ion-icon>
-                  <p>Greenpeace</p>
-                </span>
+            </li>
+            <li>
+              <div class="article-card">
+                <figure class="article-banner">
+                  <img src="https://i.ibb.co/zm9PHXx/article2.jpg" alt="Equitable Transportation, Savior(s) of Safe Mobility in Our Society">
+                </figure>
+                <div class="article-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2023-03-28">28 March 2023</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>Greenpeace</p>
+                  </span>
+                </div>
+                <h3 class="article-title">Equitable Transportation, Savior(s) of Safe Mobility in Our Society</h3>
+                <p class="article-text">
+                  Public transportation is a basic need of the community and is realized by the government from the results of collecting taxes on its people.
+                </p>
+                <a href="article-1.html" class="article-link-btn">
+                  <span>Learn More</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
               </div>
-              <h3 class="article-title">
-                Equitable Transportation, Savior(s) of Safe Mobility in Our
-                Society
-              </h3>
-              <p class="article-text">
-                Public transportation is a basic need of the community and is
-                realized by the government from the results of collecting taxes
-                on its people.
-              </p>
-              <a href="article-1.html" class="article-link-btn">
-                <span>Learn More</span>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </a>
-            </div>
-          </li>
-
-          <!-- Article 5 -->
-          <li>
-            <div class="article-card">
-              <figure class="article-banner">
-                <img
-                  src="https://i.ibb.co/jzKbkn7/article3.jpg"
-                  alt="IPCC Reveals Climate Crisis More Real, Ambitious Climate Action Needed Now"
-                />
-              </figure>
-              <div class="article-meta">
-                <span>
-                  <ion-icon name="calendar-outline"></ion-icon>
-                  <time datetime="2023-03-22">22 March 2023</time>
-                </span>
-                <span>
-                  <ion-icon name="person-outline"></ion-icon>
-                  <p>Greenpeace</p>
-                </span>
+            </li>
+            <li>
+              <div class="article-card">
+                <figure class="article-banner">
+                  <img src="https://i.ibb.co/jzKbkn7/article3.jpg" alt="IPCC Reveals Climate Crisis More Real, Ambitious Climate Action Needed Now">
+                </figure>
+                <div class="article-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2023-03-22">22 March 2023</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>Greenpeace</p>
+                  </span>
+                </div>
+                <h3 class="article-title">IPCC Reveals Climate Crisis More Real, Ambitious Climate Action Needed Now</h3>
+                <p class="article-text">
+                  The increase in Earth's temperature could reach 2.8°C in 2100, exceeding the safe limit of global warming. Ambitious climate action is needed now.
+                </p>
+                <a href="article-1.html" class="article-link-btn" id="link">
+                  <span>Learn More</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
               </div>
-              <h3 class="article-title">
-                IPCC Reveals Climate Crisis More Real, Ambitious Climate Action
-                Needed Now
-              </h3>
-              <p class="article-text">
-                The increase in Earth's temperature could reach 2.8°C in 2100,
-                exceeding the safe limit of global warming. Ambitious climate
-                action is needed now.
-              </p>
-              <a href="article-1.html" class="article-link-btn" id="link">
-                <span>Learn More</span>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </a>
-            </div>
-          </li>
-
-          <!-- Article 6 -->
-          <li>
-            <div class="article-card">
-              <figure class="article-banner">
-                <img
-                  src="https://i.ibb.co/Qbn1hmS/article1.jpg"
-                  alt="Papua Clear Voice Festival, Understanding and Voicing Papua Through Arts and Culture"
-                />
-              </figure>
-              <div class="article-meta">
-                <span>
-                  <ion-icon name="calendar-outline"></ion-icon>
-                  <time datetime="2023-03-17">17 March 2023</time>
-                </span>
-                <span>
-                  <ion-icon name="person-outline"></ion-icon>
-                  <p>Greenpeace</p>
-                </span>
+            </li>
+            <li>
+              <div class="article-card">
+                <figure class="article-banner">
+                  <img src="https://i.ibb.co/Qbn1hmS/article1.jpg" alt="Papua Clear Voice Festival, Understanding and Voicing Papua Through Arts and Culture">
+                </figure>
+                <div class="article-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2023-03-17">17 March 2023</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>Greenpeace</p>
+                  </span>
+                </div>
+                <h3 class="article-title">Papua Clear Voice Festival, Understanding and Voicing Papua Through Arts and Culture</h3>
+                <p class="article-text">
+                  Greenpeace collaborated with Papua Itu Kita-forum Papuan solidarity focused on human rights as well as an information and study center to hold..
+                </p>
+                <a href="article-1.html" class="article-link-btn">
+                  <span>Learn More</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
               </div>
-              <h3 class="article-title">
-                Papua Clear Voice Festival, Understanding and Voicing Papua
-                Through Arts and Culture
-              </h3>
-              <p class="article-text">
-                Greenpeace collaborated with Papua Itu Kita-forum Papuan
-                solidarity focused on human rights as well as an information and
-                study center to hold..
-              </p>
-              <a href="article-1.html" class="article-link-btn">
-                <span>Learn More</span>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </a>
-            </div>
-          </li>
-        </ul>
-        <!-- <div class="article-button">
-          <a href="/article.html" class="btn btn-primary">Read More</a>
-        </div> -->
-      </div>
-    </article>
+            </li>
+          </ul>
+          <!-- <div class="article-button">
+            <a href="article.html" class="btn btn-primary" >Read More</a>
+          </div> -->
+        </div>
+      </article>
+    </main>
 
     <!--===== FOOTER =====-->
     <footer>
