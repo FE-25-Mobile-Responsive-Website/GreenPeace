@@ -67,7 +67,7 @@ function submit(event) {
   }
 }
 
-document.getElementById('submit-form').addEventListener('click', submit);
+// document.getElementById('submit-form').addEventListener('click', submit);
 
 
 
