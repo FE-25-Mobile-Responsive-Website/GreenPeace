@@ -7,6 +7,7 @@ let params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + toper
 
 document.getElementById('twt').addEventListener('click',shareTWT)
 document.getElementById('FB').addEventListener('click',shareFB)
+document.getElementById('wa').addEventListener('click',sharewa)
 
 function shareTWT() {   
     let url="https://twitter.com/intent/tweet?url=" + encodeURI(currentLocation) + "&text="+encodeURI(deskripsi);
@@ -16,3 +17,7 @@ function shareFB() {
     let url="https://web.facebook.com/sharer.php?u=" + encodeURI(currentLocation);
     window.open(url,'NewWindow',params);
 }
+function sharewa(){
+    var url="https://api.whatsapp.com/send?phone=&text=" + encodeURI(title +" "+deskripsi);
+    window.open(url,'NewWindow',params);
+  }
