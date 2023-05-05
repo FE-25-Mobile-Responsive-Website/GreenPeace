@@ -7,8 +7,8 @@
   --black-1: hsl(244, 17%, 19%);
   --black-2: hsl(0, 0%, 0%);
   --black-3: hsl(245, 16%, 16%);
-  --green-1: hsl(125, 74%, 33%);
-  --green-2: hsla(103, 100%, 35%, 0.725);
+  --green-1: #169220;
+  --green-2: #33b300b9;
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(240, 100%, 99%);
   --white-3: hsl(228, 50%, 96%);
@@ -42,7 +42,7 @@
 
   --transition: 0.25s ease;
   --transition-1: 0.25s ease-out;
-  --transition-2: 0.35s ease-out;
+  --transition-2: 0.35s ease-in-out;
   --transition-3: 0.5s ease-out;
 
   /**
@@ -377,6 +377,34 @@ body {
 }
 
 /*-----------------------------------*\
+  #BANNER
+\*-----------------------------------*/
+.banner{
+  height: 360px;
+  background-image: url(img/B-01.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner { 
+  margin-block: 75px;
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content .section-text{
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+
+/*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
 
@@ -397,26 +425,94 @@ body {
   margin-block-start: 20px;
 }
 
+.about-banner {
+  position: relative;
+  border-radius: var(--radius-5);
+  overflow: hidden;
+  margin-block-end: 25px;
+}
+
+.about :is(.section-text) { text-align: justify; }
+
+.about .section-title { margin-block-end: 36px; }
+
+.about .section-text:not(:last-child) { margin-block-end: 18px; }
+
+.about-item .section-text { 
+  margin-block-end: 18px;
+  margin-inline: 0; 
+}
+
+.about .h3 { 
+  margin-block-end: 18px;
+  text-align: justify; 
+}
+
+.about-list { margin-block: 15px 18px; }
+
+.about-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.about-item ion-icon {
+  color: var(--green-1);
+  flex-shrink: 0;
+  margin-block-start: 2px;
+}
+
+.about-banner .img-cover{
+  width: 400px;
+  aspect-ratio: 4/6;
+  object-fit: cover;
+}
+
+.about-banner { overflow: hidden; }
+
+.about-banner img { transition: var(--transition-2); }
+
+.about-banner:is(:hover, :focus-within) img { transform: scale(1.05);}
 
 
 /*-----------------------------------*\
   #ARTIKEL
 \*-----------------------------------*/
-.article { padding-block: var(--section-padding);
-  margin-block: var(--section-margin);
+.article { 
+  margin-bottom: var(--section-margin);
+}
+
+.article-detail{
+  margin-top: var(--section-margin);
+}
+
+.article-detail .container{
+  padding: 60px 120px;
+}
+
+.article-detail .section-title{
+  font-size: 36px;
+}
+
+.article-detail .section-title::after{
+  background-color: transparent;
 }
 
 .penulis{
   margin :10px 0px;
-  color: var(--independence);
+  color: var(--black-2);
+  text-align: center;
 }
 
 .share-sosmed{
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  max-width: 120px;
-  /* padding-right: 90%; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.share-sosmed  #wa:hover,#twt:hover,#FB:hover{
+  color: var(--green-1);
 }
 
 .article .section-title { margin-bottom: 80px; }
@@ -731,6 +827,141 @@ footer .logo { margin-bottom: 25px; }
 
 .copyright a:is(:hover, :focus) { color: var(--white-1); }
 
+
+/*-----------------------------------*\
+  #LOGIN&SIGN UP
+\*-----------------------------------*/
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  position: relative;
+  width: 400px;
+  padding: 40px;
+  background: var(--white-opacity);
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(180, 180, 180, 0.6);
+  border-radius: 10px;
+  margin: 200px 0px;
+}
+
+.login-box h2 {
+  margin:30px 0px;
+  padding: 0;
+  color: var(--black-1);
+  text-align: center;
+}
+
+.login-box .section-title::after{
+  background-color: transparent;
+}
+
+.login-box .section-text{
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--independence);
+}
+
+.login-box .section-text a{
+  display:contents;
+  color: var(--green-1);
+}
+
+.login-box .btn{
+  width: 100%;
+  padding: 10px 140px;
+  text-align: center;
+}
+
+.login-box .reg{
+  width: 100%;
+  padding: 10px 132px;
+  text-align: center;
+}
+
+.user-box {
+  position: relative;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--black-3);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid var(--black-1);
+  outline: none;
+  background: transparent;
+}
+
+.user-box input:focus {
+  border-bottom-color: var(--green-1);
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--black-1);
+  pointer-events: none;
+  transition: all 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: var(--green-1);
+  font-size: 13px;
+}
+
+/* .login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4; 
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: all 0.5s;
+  margin-right: 40px;
+  letter-spacing: 4px;
+} */
+
+/* .login-box a:hover {
+  background: #03e9f4;
+  color: var(--black-1);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+} */
+
+/* .login-box a span {
+  position: absolute;
+  display: block;
+} */
+
+/* .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--black-1));
+    animation: anim1 1s linear infinite;
+} */
+
+
+
+
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -882,7 +1113,6 @@ footer .logo { margin-bottom: 25px; }
   .about-banner {
     max-width: 600px;
     margin-inline: auto;
-    margin-bottom: 80px;
     border-radius: 1rem;
   }
 
