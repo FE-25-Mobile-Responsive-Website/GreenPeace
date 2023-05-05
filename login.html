@@ -5,46 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="assets/login.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <!--===== FONTAWESOME LINK =====-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 </head>
 
 <body>
+    <!--===== HEADER =====-->
+    <header class="header" data-header>
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="https://i.ibb.co/DgJ1wqm/logo-gp.png" alt="logo-gp" border="0"/>
+          </a>
+          <button class="menu-toggle-btn" data-nav-toggle-btn>
+            <i class="fa-solid fa-bars open" style="color: #707070"></i>
+            <i class="fa-solid fa-xmark close" style="color: #707070"></i>
+          </button>
+          <nav class="navbar">
+              <ul class="navbar-list">
+                <li>
+                  <a href="index.html" class="navbar-link" data-navbar-link>Home</a>
+                </li>
+                <li>
+                  <a href="article.html" class="navbar-link" data-navbar-link>Artikel</a>
+                </li>
+                <li>
+                  <a href="program.html" class="navbar-link" data-navbar-link>Program</a>
+                </li>
+                <li>
+                  <a href="about.html" class="navbar-link" data-navbar-link>Tentang Kami</a>
+                </li>
+              </ul>
+              <button class="btn navbar-btn btn-primary">
+                <span>DONASI</span>
+              </button>
+              <a href="login.html">
+                <button id="btn-login" class="btn navbar-btn btn-outline">
+                  <span>Login</span>
+                </button>
+              </a>
+                <button id="btn_signout" class="btn navbar-btn btn-outline">
+                  <span>sign Out</span>
+                </button>
+            </nav>        
+        </div>
+    </header>
      
     <!-- ===== FORM ======== -->
-    <div id="container_demo" >
-        <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
-        <a class="hiddenanchor" id="toregister"></a>
-        <a class="hiddenanchor" id="tologin"></a>
-        <div id="wrapper">
-            <div id="login" class="animate form">
-                <form id="login_form" autocomplete="on"> 
-                    <h1>Log in</h1> 
-                    <p> 
-                        <label for="username" class="uname" data-icon="u" > Your email or username </label>
-                        <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
-                    </p>
-                    <p> 
-                        <label for="password" class="youpasswd" data-icon="p"> Your password </label>
-                        <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
-                    </p>
-                    <p class="keeplogin"> 
-                        <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
-                        <label for="loginkeeping">Keep me logged in</label>
-                    </p>
-                    <p class="login button"> 
-                        <input type="submit" value="Login" /> 
-                    </p>
-                    <p class="change_link">
-                        Not a member yet ?
-                        <a href="register.html" class="to_register">Join us</a>
-                    </p>
-                </form>
-            </div>
+    <section class="section form-con" id="login">
+        <div class="container form-box">
+          <h2 class="section-title">Login</h2>
+          <form id="login_form" autocomplete="on">
+              <div class="user-box">
+                  <input id="username" name="username" required="required" type="text">
+                  <label for="username">Username</label>
+              </div>
+              <div class="user-box">
+                  <input id="password" name="password" required="required" type="password">
+                  <label for="password">Password</label>
+              </div>
+              <input type="submit" class="btn btn-primary" value="Login">
+              <h5 class="section-text">Tidak mempunyai akun? <a href="register.html">Sign Up</a> </h5>
+          </form>
         </div>
-    </div>  
-    <script src="assets/login.js"></script>
-</body>
+    </section>
 
+    <!--===== FOOTER =====-->
+    <footer>
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-brand">
+              <a href="#" class="logo">
+                <img src="https://i.ibb.co/DgJ1wqm/logo-gp.png" alt="gp logo">
+              </a>
+              <p class="footer-text">
+                  Greenpeace has a mission for a green and peaceful world.
+              </p>
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-link-box">
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-item-title">MENU</p>
+                </li>
+                <li>
+                  <a href="index.html" class="footer-link">Home</a>
+                </li>
+                <li>
+                  <a href="article.html" class="footer-link">Artikel</a>
+                </li>
+                <li>
+                  <a href="program.html" class="footer-link">Program</a>
+                </li>
+                <li>
+                  <a href="about.html" class="footer-link">Tentang Kami</a>
+                </li>
+              </ul>
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-item-title">CONTACT</p>
+                </li>
+                <ul class="contact-list">
+                  <li>
+                    <a href="#" class="contact-link">
+                      <ion-icon name="location-outline"></ion-icon>
+                      <address>Kecamatan Menteng, Jakarta Pusat</address>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+62213148521" class="contact-link">
+                      <ion-icon name="call-outline"></ion-icon>
+                      <span>+62213148521</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info.id@greenpeace.org" class="contact-link">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <span>info.id@greenpeace.org</span>
+                    </a>
+                  </li>
+                </ul>
+              </ul>         
+             </div>
+           </div>
+        </div>
+         <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">&copy; 2023 <a href="">Greenpeace</a>. All Right Reserved</p>
+          </div>
+        </div>
+    </footer>
+    <!--===== JS =====-->
+    <script src="assets/script.js"></script>
+    <script src="assets/login.js"></script>
+    <!-- ===== ionicon link =====-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+</body>
 </html>
