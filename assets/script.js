@@ -68,3 +68,20 @@ function submit(event) {
 }
 
 document.getElementById('submit-form').addEventListener('click', submit);
+
+
+
+//index login dari local storage
+if(localStorage.getItem('index_login') == 0 ){
+  document.getElementById('btn-login').style = 'display:none';
+  document.getElementById('btn_signout').style = 'display:block';
+
+}else{
+  document.getElementById('btn-login').style = 'display:block';
+  document.getElementById('btn_signout').style = 'display:none';
+}
+
+document.getElementById('btn_signout').addEventListener('click',()=>{
+  localStorage.removeItem('index_login');
+  window.location.href = "index.html";
+})
