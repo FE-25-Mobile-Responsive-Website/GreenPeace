@@ -490,17 +490,29 @@ body {
   padding: 60px 120px;
 }
 
+.article-detail .section-title{
+  font-size: 36px;
+}
+
+.article-detail .section-title::after{
+  background-color: transparent;
+}
+
 .penulis{
   margin :10px 0px;
-  color: var(--independence);
+  color: var(--black-2);
+  text-align: center;
 }
 
 .share-sosmed{
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  max-width: 120px;
-  /* padding-right: 90%; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.share-sosmed  #wa:hover,#twt:hover,#FB:hover{
+  color: var(--green-1);
 }
 
 .article .section-title { margin-bottom: 80px; }
