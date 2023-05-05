@@ -83,5 +83,5 @@ if(localStorage.getItem('index_login') == 0 ){
 
 document.getElementById('btn_signout').addEventListener('click',()=>{
   localStorage.removeItem('index_login');
-  window.location.href = "index.html";
+  location.reload()
 })
