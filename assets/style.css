@@ -673,6 +673,12 @@ body {
 
 .program-card:is(:hover, :focus)::after { width: 100%; }
 
+#btn_ikutpro {
+  /* margin-top: 70px; */
+  margin: auto;
+  margin-top: 50px;
+}
+
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
