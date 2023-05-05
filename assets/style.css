@@ -838,7 +838,7 @@ footer .logo { margin-bottom: 25px; }
   #LOGIN&SIGN UP
 \*-----------------------------------*/
 
-.login{
+.form-con{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -847,7 +847,7 @@ footer .logo { margin-bottom: 25px; }
   background-size: cover;
 }
 
-.login-box {
+.form-box {
   position: relative;
   width: 400px;
   padding: 40px;
@@ -858,18 +858,18 @@ footer .logo { margin-bottom: 25px; }
   margin: 150px 0px;
 }
 
-.login-box h2 {
+.form-box h2 {
   margin:30px 0px;
   padding: 0;
   color: var(--black-1);
   text-align: center;
 }
 
-.login-box .section-title::after{
+.form-box .section-title::after{
   background-color: transparent;
 }
 
-.login-box .section-text{
+.form-box .section-text{
   margin-bottom: 0;
   text-align: center;
   margin-top: 20px;
@@ -877,18 +877,18 @@ footer .logo { margin-bottom: 25px; }
   color: var(--independence);
 }
 
-.login-box .section-text a{
+.form-box .section-text a{
   display:contents;
   color: var(--green-1);
 }
 
-.login-box .btn{
+.form-box .btn{
   width: 100%;
   padding: 10px 140px;
   text-align: center;
 }
 
-.login-box .reg{
+.form-box .reg{
   width: 100%;
   padding: 10px 132px;
   text-align: center;
