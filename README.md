@@ -17,7 +17,7 @@ Akbar Priyo Santosa
 
 2. Link Wireframe/UI Design : 
 
-    https://www.figma.com/proto/6PqGkt1iX4vudO613l9gR9/UI?type=design&node-id=1-9147&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A9482&hide-ui=1
+    https://www.figma.com/file/6PqGkt1iX4vudO613l9gR9/UI?type=design&node-id=0%3A1&t=bzW7NqSt1IWpuc1J-1
 
 3. Link User Flow dan Business flow : 
 
@@ -36,5 +36,5 @@ Akbar Priyo Santosa
     https://greenpeace-fe25.netlify.app/ 
 
 7. Link Video Recoding Presentation : 
-    
 
+    https://youtu.be/s3EBqA7KmeY
