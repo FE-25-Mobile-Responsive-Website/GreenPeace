@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenPeace</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <!--===== FONTAWESOME LINK =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="shortcut icon" href="assets/img/Logo.svg" type="image/svg+xml"/>
+  </head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="header" data-header>
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="https://i.ibb.co/DgJ1wqm/logo-gp.png" alt="logo-gp" border="0"/>
+          </a>
+          <button class="menu-toggle-btn" data-nav-toggle-btn>
+            <i class="fa-solid fa-bars open" style="color: #707070"></i>
+            <i class="fa-solid fa-xmark close" style="color: #707070"></i>
+          </button>
+          <nav class="navbar">
+              <ul class="navbar-list">
+                <li>
+                  <a href="index.html" class="navbar-link" data-navbar-link>Home</a>
+                </li>
+                <li>
+                  <a href="article.html" class="navbar-link" data-navbar-link>Artikel</a>
+                </li>
+                <li>
+                  <a href="program.html" class="navbar-link" data-navbar-link>Program</a>
+                </li>
+                <li>
+                  <a href="about.html" class="navbar-link active" data-navbar-link>Tentang Kami</a>
+                </li>
+              </ul>
+              <a href="donation.html">
+                <button class="btn navbar-btn btn-primary" >
+                  <span>DONASI</span>
+                </button>
+              </a>
+              <a href="login.html">
+                <button id="btn-login" class="btn navbar-btn btn-outline">
+                  <span>Login</span>
+                </button>
+              </a>
+                <button id="btn_signout" class="btn navbar-btn btn-outline">
+                  <span>Sign Out</span>
+                </button>
+          </nav>        
+        </div>
+      </header>
+      
+      <main>
+      <!--===== ABOUT =====-->
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+          <div class="about-banner img-holder" style="--width: 720; --height: 960;">
+            <img src="assets/img/GP-AU.jpg" width="720" height="960" loading="lazy" alt="about banner" class="img-cover">
+          </div>
+          <div class="about-content">
+            <h2 class="h2 section-title">Tentang Kami</h2>
+            <h3 class="h3">Greenpeace hadir karena bumi yang rapuh ini perlu suara. Butuh solusi. Butuh perubahan. Butuh aksi.</h3>
+            <p class="section-text">
+              Di seluruh dunia, kita berdiri bersama-sama dengan masyarakat, menuntut pertanggung jawaban berbagai pemerintahan dan
+              perusahaan untuk bertanggung jawab. Mulai dari jalanan hingga ke tempat para pengambil keputusan, kita mempunyai kekuatan nyata jika kita bekerja sama.  
+            </p>
+            <h3 class="h3">Nilai Dasar</h3>
+            <ul class="about-list">
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                <p class="section-text">Aksi tanpa kekerasan dan bertanggung jawab secara pribadi.</p>
+              </li>
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                <p class="section-text">Independensi.</p>
+              </li>
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                <p class="section-text">Greenpeace tidak punya lawan atau kawan yang permanen.</p>
+              </li>
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                <p class="section-text">Mempromosikan solusi.</p>
+              </li>
+            </ul>
+        </div>        
+      </section>
+      </main>
+
+      <!--===== FOOTER =====-->
+      <footer>
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-brand">
+              <a href="#" class="logo">
+                <img src="https://i.ibb.co/DgJ1wqm/logo-gp.png" alt="gp logo">
+              </a>
+              <p class="footer-text">
+                Greenpeace memiliki misi untuk membuat dunia yang lebih hijau dan damai.
+              </p>
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-link-box">
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-item-title">MENU</p>
+                </li>
+                <li>
+                  <a href="index.html" class="footer-link">Home</a>
+                </li>
+                <li>
+                  <a href="article.html" class="footer-link">Artikel</a>
+                </li>
+                <li>
+                  <a href="program.html" class="footer-link">Program</a>
+                </li>
+                <li>
+                  <a href="about.html" class="footer-link">Tentang Kami</a>
+                </li>
+              </ul>
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-item-title">CONTACT</p>
+                </li>
+                <ul class="contact-list">
+                  <li>
+                    <a href="#" class="contact-link">
+                      <ion-icon name="location-outline"></ion-icon>
+                      <address>Kecamatan Menteng, Jakarta Pusat</address>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+62213148521" class="contact-link">
+                      <ion-icon name="call-outline"></ion-icon>
+                      <span>+62213148521</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info.id@greenpeace.org" class="contact-link">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <span>info.id@greenpeace.org</span>
+                    </a>
+                  </li>
+                </ul>
+              </ul>         
+             </div>
+           </div>
+        </div>
+         <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">&copy; 2023 <a href="">Greenpeace</a>. All Right Reserved</p>
+          </div>
+        </div>
+      </footer>
+      <!--===== JS =====-->
+      <script src="assets/script.js"></script>
+      <!-- ===== ionicon link =====-->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+</body>
+</html>

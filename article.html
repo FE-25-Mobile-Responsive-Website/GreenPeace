@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>GreenPeace</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style.css"/>
     <!--===== FONTAWESOME LINK =====-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <link rel="shortcut icon" href="assets/img/Logo.svg" type="image/svg+xml"/>
   </head>
   <body>
-
     <!--===== HEADER =====-->
     <header class="header" data-header>
       <div class="container">
@@ -25,10 +24,10 @@
         <nav class="navbar">
             <ul class="navbar-list">
               <li>
-                <a href="index.html" class="navbar-link active" data-navbar-link>Home</a>
+                <a href="index.html" class="navbar-link" data-navbar-link>Home</a>
               </li>
               <li>
-                <a href="article.html" class="navbar-link" data-navbar-link>Artikel</a>
+                <a href="article.html" class="navbar-link active" data-navbar-link>Artikel</a>
               </li>
               <li>
                 <a href="program.html" class="navbar-link" data-navbar-link>Program</a>
@@ -36,12 +35,13 @@
               <li>
                 <a href="about.html" class="navbar-link" data-navbar-link>Tentang Kami</a>
               </li>
+
             </ul>
             <a href="donation.html">
-            <button class="btn navbar-btn btn-primary" >
-              <span>DONASI</span>
-            </button>
-          </a>
+              <button class="btn navbar-btn btn-primary" >
+                <span>DONASI</span>
+              </button>
+            </a>
             <a href="login.html">
               <button id="btn-login" class="btn navbar-btn btn-outline">
                 <span>Login</span>
@@ -49,33 +49,23 @@
             </a>
               <button id="btn_signout" class="btn navbar-btn btn-outline">
                 <span>Sign Out</span>
-              </button>
         </nav>        
       </div>
     </header>
 
     <main>
-      <!--===== HOME =====-->
-      <section class="section hero" id="home">
-        <div class="container">
-          <div class="hero-content">
-            <p class="hero-subtitle">Greenpeace</p>
-            <h1 class="h1 hero-title">Mari Lindungi Bumi Bersama kami</h1>
-            <p class="hero-text" id="description">
-              Greenpeace hadir karena bumi yang rapuh ini perlu suara. Butuh solusi. Butuh perubahan. Butuh aksi. 
-            </p>
-            <a href="login.html" class="btn btn-primary">Gabung Sekarang</a>
-          </div>
-          <figure class="hero-banner">
-            <img src="https://i.ibb.co/NSZ8PTq/scouts.png" alt="hero banner"/>
-          </figure>
+    <!--===== HERO =====-->
+    <section class="section banner" id="banner">
+      <div class="container">
+        <div class="banner-content">
+          <h2 class="h1 section-title">Artikel</h2>
+          <!-- <p class="section-text">Aksi tanpa kekerasan dan bertanggung jawab secara pribadi.</p> -->
         </div>
-      </section>
-
+      </div>
+    </section>
       <!--===== ARTICLE =====-->
       <article class="article" id="article">
         <div class="container">
-          <h2 class="h1 section-title">Artikel</h2>
           <ul class="article-list">
             <li>
               <div class="article-card">
@@ -152,68 +142,87 @@
                 </a>
               </div>
             </li>
+            <li>
+              <div class="article-card">
+                <figure class="article-banner">
+                  <img src="https://i.ibb.co/zPf07N4/gas1.jpg" alt="Equitable Transportation, Savior(s) of Safe Mobility in Our Society">
+                </figure>
+                <div class="article-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2023-03-28">15 Maret 2023</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>Greenpeace</p>
+                  </span>
+                </div>
+                <h3 class="article-title">Gerakan Lingkungan dan Buruh Mesti Bersatu Perjuangan Iklim adalah Perjuangan Kelas</h3>
+                <p class="article-text">
+                  Di Indonesia dan berbagai belahan dunia, kelas pekerja terlibat dalam perjuangan lingkungan hidup dan keadilan iklim. Tujuannya ialah bergerak ke ekonomi...
+                </p>
+                <a href="article-1.html" class="article-link-btn">
+                  <span>Selengkapnya</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="article-card">
+                <figure class="article-banner">
+                  <img src="https://i.ibb.co/MCf9WHB/gas2.jpg" alt="IPCC Reveals Climate Crisis More Real, Ambitious Climate Action Needed Now">
+                </figure>
+                <div class="article-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2023-03-22">`12 Maret 2023</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>Munaroh</p>
+                  </span>
+                </div>
+                <h3 class="article-title">Indonesia Ranking Satu Negara Paling Berpolusi se-Asia Tenggara</h3>
+                <p class="article-text">
+                  Polusi udara berisiko besar terhadap kesehatan. Sayangnya, pemerintah tampaknya masih abai terhadap hak rakyat atas udara bersih...
+                </p>
+                <a href="article-1.html" class="article-link-btn" id="link">
+                  <span>Selengkapnya</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="article-card">
+                <figure class="article-banner">
+                  <img src="https://i.ibb.co/GxjR03N/gas3.jpg" alt="Papua Clear Voice Festival, Understanding and Voicing Papua Through Arts and Culture">
+                </figure>
+                <div class="article-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2023-03-17">17 Maret 2023</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>Greenpeace</p>
+                  </span>
+                </div>
+                <h3 class="article-title">Soroti Peran Indonesia dalam Perlindungan Laut Global Aktivis Greenpeace</h3>
+                <p class="article-text">
+                  Peran Indonesia sebagai negara kepulauan terbesar di dunia sangat vital dalam upaya mewujudkan target 30x30 ini. Dan tahun 2030 tinggal tujuh tahun lagi...
+                </p>
+                <a href="article-1.html" class="article-link-btn">
+                  <span>Selengkapnya</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </li>
           </ul>
-          <div class="article-button">
-            <a href="article.html" class="btn btn-primary" >Baca Lebih Lanjut</a>
-          </div>
+          <!-- <div class="article-button">
+            <a href="article.html" class="btn btn-primary" >Read More</a>
+          </div> -->
         </div>
       </article>
-
-      <!--===== PROGRAM =====-->
-      <section class="program" id="program">
-        <div class="container">
-          <h2 class="h1 section-title">Program Kami</h2>
-          <ul class="program-list">
-            <li>
-              <div class="program-card">
-                <div class="card-icon">
-                  <img src="https://i.ibb.co/hCBYQjC/d1.png" alt="Donation icon">
-                </div>
-                <h3 class="h3 card-title">Donasi</h3>
-                <p class="card-text">
-                Mari membela lingkungan sepanjang hidupmu, bahkan lebih lama dari itu. Berdonasilah hari ini.  
-                </p>
-                <a href="donation.html" class="card-link">
-                  <span>Donasi Sekarang</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="program-card">
-                <div class="card-icon">
-                  <img src="https://i.ibb.co/GdDvCx5/v1.png" alt="Volunteer icon">
-                </div>
-                <h3 class="h3 card-title">Relawan</h3>
-                <p class="card-text">
-                  Bumi kita membutuhkan suara dan aksimu untuk mencari solusi membuat perubahan nyata.
-                </p>
-                <a href="program.html" class="card-link">
-                  <span>Gabung Sekarang</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!--===== ABOUT =====-->
-      <section class="section about" id="about">
-        <div class="container">
-          <figure class="hero-banner">
-            <img src="https://i.ibb.co/H7Cq5Mn/gp-about.jpg" alt="hero banner" />
-          </figure>
-          <div class="hero-content">
-            <p class="hero-subtitle">Kenali organisasi kami</p>
-            <h1 class="h1 hero-title">Tentang Kami</h1>
-            <p class="hero-text">
-              Greenpeace adalah organisasi kampanye independen, yang menggunakan konfrontasi kreatif dan damai untuk mengungkap masalah lingkungan global, dan mengembangkan solusi untuk masa depan yang hijau dan damai.
-            </p>
-            <a href="about.html" class="btn btn-primary" >Selengkapnya</a>
-          </div>
-        </div>
-      </section>
     </main>
 
     <!--===== FOOTER =====-->
@@ -222,7 +231,7 @@
         <div class="container">
           <div class="footer-brand">
             <a href="#" class="logo">
-              <img src="https://i.ibb.co/DgJ1wqm/logo-gp.png" alt="gp logo">
+              <img src="https://i.ibb.co/DgJ1wqm/logo-gp.png" alt="gp logo" />
             </a>
             <p class="footer-text">
               Greenpeace memiliki misi untuk membuat dunia yang lebih hijau dan damai.
@@ -254,7 +263,7 @@
                 <a href="index.html" class="footer-link">Home</a>
               </li>
               <li>
-                <a href="article.html" class="footer-link">Artikel</a>
+                <a href="article" class="footer-link">Article</a>
               </li>
               <li>
                 <a href="program.html" class="footer-link">Program</a>
@@ -262,6 +271,7 @@
               <li>
                 <a href="about.html" class="footer-link">Tentang Kami</a>
               </li>
+              
             </ul>
             <ul class="footer-list">
               <li>
@@ -287,20 +297,29 @@
                   </a>
                 </li>
               </ul>
-            </ul>         
-           </div>
-         </div>
+            </ul>
+          </div>
+        </div>
       </div>
-       <div class="footer-bottom">
+      <div class="footer-bottom">
         <div class="container">
-          <p class="copyright">&copy; 2023 <a href="">Greenpeace</a>. All Right Reserved</p>
+          <p class="copyright">
+            &copy; 2023 <a href="">Greenpeace</a>. All Right Reserved
+          </p>
         </div>
       </div>
     </footer>
     <!--===== JS =====-->
     <script src="assets/script.js"></script>
     <!-- ===== ionicon link =====-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
